@@ -4,6 +4,7 @@ import (
 	"github.com/reiver/go-jsonld"
 	"github.com/reiver/go-opt"
 	"github.com/reiver/go-qat"
+	"github.com/reiver/go-qat/rtxt"
 	"github.com/reiver/go-schemaorg"
 )
 
@@ -68,7 +69,7 @@ func MarshalFAQPage(qas []qat.QA) ([]byte, error) {
 		question := schemaorg.Question{
 			Name: opt.Something(qa.Question),
 			AcceptedAnswer: opt.Something(schemaorg.Answer{
-				Text: opt.Something(textToHTML(qa.Answer)),
+				Text: opt.Something(rtxt.ToHTML(qa.Answer)),
 			}),
 		}
 		questions = append(questions, question)
