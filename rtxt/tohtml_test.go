@@ -85,6 +85,92 @@ func TestToHTML(t *testing.T) {
 			input:  "Line one\nLine two\n\nNew paragraph",
 			expect: "<p>Line one<br>Line two</p><p>New paragraph</p>",
 		},
+
+		// Persian numbers
+		{
+			name:   "persian digits",
+			input:  "۰۱۲۳۴۵۶۷۸۹",
+			expect: "<p>۰۱۲۳۴۵۶۷۸۹</p>",
+		},
+		{
+			name:   "persian number in sentence",
+			input:  "قیمت ۱۲۳ تومان است",
+			expect: "<p>قیمت ۱۲۳ تومان است</p>",
+		},
+		{
+			name:   "bold persian number",
+			input:  "**۴۲**",
+			expect: "<p><strong>۴۲</strong></p>",
+		},
+		{
+			name:   "persian numbers in two paragraphs",
+			input:  "شماره ۱\n\nشماره ۲",
+			expect: "<p>شماره ۱</p><p>شماره ۲</p>",
+		},
+
+		// Persian words
+		{
+			name:   "persian dorood",
+			input:  "درود",
+			expect: "<p>درود</p>",
+		},
+		{
+			name:   "persian dorood bold",
+			input:  "**درود**",
+			expect: "<p><strong>درود</strong></p>",
+		},
+		{
+			name:   "persian sentence",
+			input:  "درود بر شما",
+			expect: "<p>درود بر شما</p>",
+		},
+		{
+			name:   "persian sentence with formatting",
+			input:  "درود **دوست** //عزیز//",
+			expect: "<p>درود <strong>دوست</strong> <em>عزیز</em></p>",
+		},
+		{
+			name:   "persian two paragraphs",
+			input:  "درود بر شما\n\nخوش آمدید",
+			expect: "<p>درود بر شما</p><p>خوش آمدید</p>",
+		},
+		{
+			name:   "persian with line break",
+			input:  "درود\nخداحافظ",
+			expect: "<p>درود<br>خداحافظ</p>",
+		},
+
+		// Korean words
+		{
+			name:   "korean plain text",
+			input:  "안녕하세요",
+			expect: "<p>안녕하세요</p>",
+		},
+		{
+			name:   "korean bold",
+			input:  "**안녕하세요**",
+			expect: "<p><strong>안녕하세요</strong></p>",
+		},
+		{
+			name:   "korean sentence with formatting",
+			input:  "이것은 **굵은** 글씨와 //기울임// 글씨입니다",
+			expect: "<p>이것은 <strong>굵은</strong> 글씨와 <em>기울임</em> 글씨입니다</p>",
+		},
+		{
+			name:   "korean two paragraphs",
+			input:  "첫 번째 단락\n\n두 번째 단락",
+			expect: "<p>첫 번째 단락</p><p>두 번째 단락</p>",
+		},
+		{
+			name:   "korean with line break",
+			input:  "안녕하세요\n감사합니다",
+			expect: "<p>안녕하세요<br>감사합니다</p>",
+		},
+		{
+			name:   "korean with highlight",
+			input:  "||중요한|| 내용",
+			expect: "<p><mark>중요한</mark> 내용</p>",
+		},
 	}
 
 	for _, tt := range tests {
