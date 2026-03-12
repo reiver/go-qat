@@ -4,7 +4,7 @@ import (
 	"github.com/reiver/go-jsonld"
 	"github.com/reiver/go-opt"
 	"github.com/reiver/go-qat"
-	"github.com/reiver/go-qat/rtxt"
+	"github.com/reiver/go-rtxt"
 	"github.com/reiver/go-schemaorg"
 )
 
