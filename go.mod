@@ -5,7 +5,7 @@ go 1.25.4
 require (
 	github.com/reiver/go-jsonld v0.0.0-20250611053742-8fec84a9f5f8
 	github.com/reiver/go-opt v0.0.0-20240809035328-1ff08dec9bc4
-	github.com/reiver/go-rtxt v0.0.0-20260312175914-32a9da5b22b7
+	github.com/reiver/go-rtxt v0.0.0-20260312182657-bf3ed504ad0a
 	github.com/reiver/go-schemaorg v0.0.0-20260307014424-43f21d314488
 )
 
