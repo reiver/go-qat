@@ -14,8 +14,6 @@ github.com/reiver/go-lck v0.0.0-20240808133902-b56df221c39f h1:KBVWBoNIM8mHkUR3d
 github.com/reiver/go-lck v0.0.0-20240808133902-b56df221c39f/go.mod h1:PFseSi8S0CBkc+YB6jYWtogPk83LumclnYJZZBQJJhs=
 github.com/reiver/go-opt v0.0.0-20240809035328-1ff08dec9bc4 h1:KQ/PDBRaJb69hmMmOs/jM8q679y9v51lY7tjX2FUkog=
 github.com/reiver/go-opt v0.0.0-20240809035328-1ff08dec9bc4/go.mod h1:3lRqhDIwZ4OaMNN6Z5rmHCX8up18IkLGuw2rxP9GrYo=
-github.com/reiver/go-rtxt v0.0.0-20260312175914-32a9da5b22b7 h1:F1uQqWwGySSUNqCTDlgEtPXkAsF8W+PxLX1w0OKJmH4=
-github.com/reiver/go-rtxt v0.0.0-20260312175914-32a9da5b22b7/go.mod h1:M/hn8cCQ+UgWcfuzTdV3QsG9zAGKH4NjRx3B69EVJFU=
 github.com/reiver/go-rtxt v0.0.0-20260312182657-bf3ed504ad0a h1:aRwXbc9MIWe3O9TgTyQK+3Vk9LBdgBdi7gvvgnUPEzM=
 github.com/reiver/go-rtxt v0.0.0-20260312182657-bf3ed504ad0a/go.mod h1:M/hn8cCQ+UgWcfuzTdV3QsG9zAGKH4NjRx3B69EVJFU=
 github.com/reiver/go-schemaorg v0.0.0-20260307014424-43f21d314488 h1:0xoARwa4Pj9TxH5jn/e7q5noTmuScMCNP1KbJQLZkE8=
